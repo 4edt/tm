@@ -1,0 +1,244 @@
+/* Warna Referensi */
+        :root {
+            --michigan-blue: #00274C;
+            --michigan-maize: #FFCB05;
+            --dark-grey: #333333;
+        }
+
+        /* --- SECTION 1: HERO & NEWS (Referensi Gambar 1) --- */
+        .hero-section {
+            position: relative;
+            height: 500px;
+            background: url('https://placehold.co/1920x800/007bff/ffffff?text=Background+Kapal/Kampus') center center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .hero-overlay-box {
+            background-color: rgba(0, 39, 76, 0.9); /* Biru Transparan */
+            color: white;
+            padding: 0;
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            margin-bottom: 50px;
+        }
+
+        .stat-box {
+            background-color: #00386b;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid rgba(255,255,255,0.1);
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 5px;
+            color: var(--michigan-maize);
+        }
+
+        .hero-text-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-thumb {
+            width: 120px; 
+            height: auto;
+            float: right;
+            margin-left: 15px;
+            border: 2px solid white;
+        }
+
+        .news-bar {
+            background-color: var(--dark-grey);
+            color: white;
+            padding: 40px 0;
+            border-top: 5px solid var(--michigan-maize); /* Aksen kuning di atas */
+        }
+
+        .news-bar h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+
+        .news-link {
+            display: block;
+            color: var(--michigan-maize);
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .news-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* --- SECTION 2: VIDEOS & EVENTS (Referensi Gambar 2) --- */
+        
+        /* Video Section - Kuning */
+        .video-section {
+            background-color: var(--michigan-maize);
+            padding: 50px 0;
+        }
+
+        .section-header-line {
+            text-align: center;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        
+        .section-header-line h2 {
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            color: var(--dark-grey);
+            margin: 0;
+        }
+
+        .video-card h5 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            min-height: 40px;
+            color: var(--dark-grey);
+        }
+
+        .video-thumbnail {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .video-thumbnail:hover img {
+            transform: scale(1.05);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Events Section - Biru */
+        .events-section {
+            background-color: var(--michigan-blue);
+            color: white;
+            padding: 50px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .events-section h2, .events-section h4 {
+            color: white;
+        }
+
+        /* Kotak Tanggal di Gambar Featured */
+        .featured-event {
+            position: relative;
+        }
+
+        .date-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            background-color: var(--dark-grey);
+            color: white;
+            width: 80px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .date-badge .month {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            background: #444;
+            padding: 2px 0;
+        }
+        
+        .date-badge .day {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            padding: 5px 0;
+        }
+
+        .featured-info {
+            margin-top: 15px;
+        }
+
+        .featured-info h3 {
+            color: var(--michigan-maize);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* Calendar List Kanan */
+        .calendar-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .calendar-item {
+            display: flex;
+            border-bottom: 1px dotted rgba(255,255,255,0.3);
+            padding: 15px 0;
+        }
+
+        .cal-date {
+            width: 80px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .cal-desc {
+            color: #ddd;
+        }
+        
+        .watch-more {
+            text-align: right;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .watch-more a {
+            color: var(--dark-grey);
+            text-decoration: none;
+        }
